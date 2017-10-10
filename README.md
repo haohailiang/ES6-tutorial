@@ -11,6 +11,7 @@
 	* 数组拼接
 	* 数组拆分
 	* 字符串拆分成字符串数组
+* demo04 Promise的使用
 ```node
 node demo01.js
 ```
