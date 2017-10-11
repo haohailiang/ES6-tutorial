@@ -14,15 +14,16 @@
 * demo04 Promise的使用
 * demo05 Promise all的使用[只返回成功结果时使用]
 * demo06 import/export的使用
-	* -> demo0601.js
-		1. npm init -y
-		2. sudo cnpm i webpack --save-dev
-		3. webpack.config.js
-		4. sudo cnpm install --save-dev babel-loader babel-core babel-preset-env
-		5. .babelrc
-		6. webpack
-		7. node dist/bundle.js 
+	* -> export.js import.js
+		
 
 ```node
 node demo01.js
+npm init -y
+sudo cnpm i webpack --save-dev
+webpack.config.js
+sudo cnpm install --save-dev babel-loader babel-core babel-preset-env
+.babelrc
+webpack
+node dist/bundle.js 
 ```
