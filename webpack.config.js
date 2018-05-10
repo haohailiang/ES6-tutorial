@@ -6,7 +6,7 @@ const ExtractTextPlugin     = require("extract-text-webpack-plugin");
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
-	entry: ['babel-polyfill','./demo09-proxy/temp.js'],
+	entry: ['babel-polyfill','./index.js'],
 	devServer: {
 		contentBase: './dist',
 		hot: true,

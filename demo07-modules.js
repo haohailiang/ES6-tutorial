@@ -1,3 +1,3 @@
-import test from './demo07-1.js';
+import test from './demo07-modules-1.js';
 
 test();

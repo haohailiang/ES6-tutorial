@@ -29,5 +29,7 @@ webpack.config.js
 sudo cnpm install --save-dev babel-loader babel-core babel-preset-env
 .babelrc
 webpack
-node dist/bundle.js 
+node dist/bundle.js
 ```
+
+process-298-知识点
