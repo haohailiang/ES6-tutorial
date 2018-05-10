@@ -33,3 +33,5 @@ checkLogin().then(res => {
 }, err => {
 	console.log(`随机数:${err.num}, 错误结果2:${err.msg}`);
 });
+
+// 更多用法参考自己的 promise-demo 项目

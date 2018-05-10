@@ -9,3 +9,9 @@ function sum([a, b]){
 	return a + b;
 }
 console.log(`sum: ${sum([1,2])}`);//sum: 3
+
+// demo02解构
+// 数组
+// 字符串
+// 对象
+// 函数传参

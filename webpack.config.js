@@ -1,8 +1,9 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path                  = require('path');
+const webpack               = require('webpack');
+const HtmlWebpackPlugin     = require('html-webpack-plugin');
+const CleanWebpackPlugin    = require('clean-webpack-plugin');
+const ExtractTextPlugin     = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
 	entry: ['babel-polyfill','./demo09-proxy/temp.js'],
@@ -29,7 +30,8 @@ module.exports = {
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({template: './index.html'}),
 		new webpack.NamedModulesPlugin(),
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new FaviconsWebpackPlugin('./my-logo.jpeg')
 	],
 	output: {
 		filename: 'index.js',

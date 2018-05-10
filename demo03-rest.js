@@ -1,5 +1,5 @@
 //函数传参
-function sum(...rest){
+let sum = (...rest) => {
 	let total = 0;
 	for(let i of rest){
 		total += i;
@@ -8,15 +8,6 @@ function sum(...rest){
 }
 console.log(`sum:${sum(1, 2, 3)}`);//sum:6
 console.log(`sum:${sum(1, '', 3)}`);//sum:13
-
-let sum3 = (...rest) => {
-	let total = 0;
-	for(let i of rest){
-		total += i;
-	}
-	return total;
-}
-console.log(`sum3:${sum3(1, 2, 3)}`);//sum3:6
 
 //数组展开
 console.log(...[1, 2, 3]);//1 2 3
