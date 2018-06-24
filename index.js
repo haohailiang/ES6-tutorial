@@ -7,4 +7,13 @@
 // import './demo14-method-prop';
 // import './demo15-symbol.js';
 // import './demo16-set';
-import './demo17-map.js';
+// import './demo17-map.js';
+// import './demo18-array-vs-map.js';
+// import './demo18-object.js';
+// import './demo19-proxy.js';
+// import './demo20-reflect.js';
+// import './demo21-class.js';
+// import './demo22-promise.js';
+// import './demo23-iterator.js';
+// import './demo24-generator.js';
+import './demo25-decorator.js';

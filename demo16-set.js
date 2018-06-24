@@ -59,3 +59,50 @@
 		console.log(item);
 	})
 }
+
+// 优先使用 Map和Set
+// 放弃使用 Object和Array
+
+{
+    // add
+	let set = new Set();
+	let item = { t:1 };
+
+	set.add(item);
+
+	console.log("set: ", set);
+}
+
+{
+    // delete
+	let set = new Set();
+	let item = { t:1 };
+
+	set.add(item);
+	console.log("delete-set: ", set);
+	set.delete(item);
+	console.log("delete-set: ", set);
+}
+
+{
+    // update
+	let set = new Set();
+	let item = { t:1 };
+
+	set.add(item);
+
+	console.log("set: ", set);
+	item.t = 2;
+	console.log("set: ", set);
+}
+
+{
+    // find
+	let set = new Set();
+	let item = { t:1 };
+
+	set.add(item);
+	let setBoolean = set.has(item)
+
+	console.log("setBoolean: ", setBoolean);
+}

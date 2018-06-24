@@ -8,20 +8,20 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 module.exports = {
 	entry: ['babel-polyfill','./index.js'],
 	devServer: {
-		contentBase: './dist',
-		hot: true,
-		compress: true,
-		port: 9000,
+		contentBase   : './dist',
+		hot           : true,
+		compress      : true,
+		port          : 9000,
 		clientLogLevel: "none",
-		quiet: true
+		quiet         : true
 	},
 	module: {
 		loaders: [
 			{
-				test: /\.html$/,
+				test  : /\.html$/,
 				loader: 'html-loader'
 			}, {
-				test: /\.js$/,
+				test  : /\.js$/,
 				loader: 'babel-loader'
 			}
 		]
@@ -35,6 +35,6 @@ module.exports = {
 	],
 	output: {
 		filename: 'index.js',
-		path: path.resolve(__dirname, 'dist')
+		path    : path.resolve(__dirname, 'dist')
 	}
 };

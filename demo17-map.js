@@ -44,6 +44,46 @@
 
 }
 
+// 优先使用 Map和Set
+// 放弃使用 Object和Array
+
+{
+    // add
+	let map = new Map();
+	map.set('t', 1);
+
+	console.log("map: ", map);
+}
+
+{
+    // delete
+	let map = new Map();
+	map.set('t', 1);
+
+	console.log("delete-map: ", map);
+	map.delete('t');
+	console.log("delete-map: ", map);
+}
+
+{
+    // update
+	let map = new Map();
+	map.set('t', 1);
+	map.set('t', 2);
+
+	console.log("map: ", map);
+}
+
+{
+    // find
+	let map = new Map();
+	map.set('t', 1);
+
+	let mapBoolean = map.has('t');
+
+	console.log("mapBoolean: ", mapBoolean);
+}
+
 // map和WeakMap的区别
 // 1.key值必须是对象
 // 2.没有size属性

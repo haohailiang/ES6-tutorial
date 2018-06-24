@@ -32,4 +32,4 @@ webpack
 node dist/bundle.js
 ```
 
-process-298-知识点
+没有babel
