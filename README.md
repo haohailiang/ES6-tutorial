@@ -32,4 +32,13 @@ webpack
 node dist/bundle.js
 ```
 
+---------------------
+### 实战项目参考
+ES6-tutorial-lottery
+### TODO
+keywords: `ES6兼容IE8`  
+https://segmentfault.com/q/1010000005095558/a-1020000009590113  
+https://github.com/zuojj/fedlab/issues/5  
+搭建一个ES6兼容IE8框架
+
 没有babel

@@ -1,3 +1,4 @@
+// import './demo07-modules-multi-main.js';
 // import './demo09-collection-2-array.js';
 // import './demo10-array-map.js';
 // import './demo11-array-util.js';
@@ -16,4 +17,6 @@
 // import './demo22-promise.js';
 // import './demo23-iterator.js';
 // import './demo24-generator.js';
-import './demo25-decorator.js';
+// import './demo25-decorator.js';
+// import './demo26-decorator.js';
+import './demo27-type-validation.js';
