@@ -13,10 +13,10 @@
 // import './demo18-object.js';
 // import './demo19-proxy.js';
 // import './demo20-reflect.js';
-// import './demo21-class.js';
+import './demo21-class.js';
 // import './demo22-promise.js';
 // import './demo23-iterator.js';
 // import './demo24-generator.js';
 // import './demo25-decorator.js';
 // import './demo26-decorator.js';
-import './demo27-type-validation.js';
+// import './demo27-type-validation.js';

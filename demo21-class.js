@@ -102,3 +102,35 @@
 
 	console.log('静态属性',Parent.type);
 }
+
+{
+	class Person {
+		constructor(name, age) {
+			this.name = name;
+			this.age = age;
+		}
+
+		sayHello() {
+			console.log(this.name, this.age);
+		}
+	}
+
+	class Student extends Person {
+		constructor(name, age, score) {
+			super(name, age);
+			this.score = score;
+		}
+
+		sayHello() {
+			super.sayHello();
+			console.log(this.score);
+		}
+	}
+
+	// 父对象的调用
+	let p = new Person('lilei', 18);
+	p.sayHello();
+
+	let s = new Student('lilei', 18, 150);
+	s.sayHello();
+}
