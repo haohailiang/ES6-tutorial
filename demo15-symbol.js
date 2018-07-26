@@ -12,7 +12,8 @@
 }
 
 {
-    // 就这么叼, 偏偏喜欢这个名字[顺序不一行, entries的结果不一样]
+	console.group('--------------  symbol --------------');
+	// 就这么叼, 偏偏喜欢这个名字[顺序不一行, entries的结果不一样]
 	let a1=Symbol.for('abc');
 	let obj={
 		'abc':345,
@@ -26,18 +27,37 @@
 	// };
 	console.log('obj',obj);
 
-    // 遍历这个个性的值[只打印出了abc]
+	// 遍历这个个性的值[只打印出了abc]
 	for(let [key,value] of Object.entries(obj)){
 		console.log('let of',key,value);
 	}
 
-    // 只打印出了123
+	// 只打印出了123
 	Object.getOwnPropertySymbols(obj).forEach(function(item){
 		console.log(obj[item]);
 	})
 
-    // 最牛B,所有的情况都可以打印出来
+	// 最牛B,所有的情况都可以打印出来
 	Reflect.ownKeys(obj).forEach(function(item){
 		console.log('ownkeys',item,obj[item]);
 	})
+
+	console.groupEnd();
+}
+
+{
+	console.group('--------------  same symbol --------------');
+	// 就这么叼, 偏偏喜欢这个名字[顺序不一行, entries的结果不一样]
+	let a1=Symbol.for('abc');
+	let b1=Symbol.for('abc');
+	let obj={
+		'abc':345,
+		'c':456,
+		[a1]:'123',
+		[b1]:'789'
+	};
+
+	// 最后一个symbol会覆盖第一个
+	console.log( obj );
+	console.groupEnd();
 }
