@@ -134,3 +134,39 @@
 	let s = new Student('lilei', 18, 150);
 	s.sayHello();
 }
+
+{
+	console.group('--------------  Person --------------');
+	class Person {
+		constructor(name, age) {
+			this.name = name;
+			this.age = age;
+		}
+
+		sayHello() {
+			for(const [key, value] of Object.entries(this)) {
+				console.log(value);
+			}
+
+			// for(let key in this) {
+			// 	console.log( this[key] );
+			// }
+		}
+	}
+
+	class Student extends Person {
+		constructor(name, age, score) {
+			super(name, age);
+			this.score = score;
+		}
+
+	}
+
+	// 父对象的调用
+	let p = new Person('lilei', 18);
+	p.sayHello();
+
+	let s = new Student('lilei', 18, 150);
+	s.sayHello();
+	console.groupEnd();
+}
