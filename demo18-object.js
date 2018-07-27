@@ -33,3 +33,15 @@
 
 	console.log("todo: ", objBoolean);
 }
+
+{
+	console.group('--------------  object 动态key --------------');
+	let t = 'a';
+
+	let obj = {
+		[t] : 2
+	}
+
+	console.log( obj );
+	console.groupEnd();
+}
