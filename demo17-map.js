@@ -89,3 +89,47 @@
 // 2.没有size属性
 // 3.不能使用clear
 // 4.不能遍历
+
+{
+	console.group('--------------  map排序 --------------');
+	class Queue {
+		constructor () {
+			this.arr = [];
+		}
+
+		// 入队
+		entryQueue(key, value) {
+			this.arr.push([key, value]);
+		}
+
+		// 打印
+		print() {
+
+			let thisMap = new Map(this.arr);
+			let keys = [];
+
+			thisMap.forEach((value, key) => {
+				keys.push(key);
+			})
+
+			keys.sort().forEach(key => console.log( thisMap.get(key) ))
+		}
+		
+		// 出队
+		deQueue() {
+			this.arr.shift();
+		}
+	}
+
+	const queue = new Queue();
+	queue.entryQueue('key-1-2', 'value-1-2');
+	queue.entryQueue('key-1-1', 'value-1-1');
+	queue.entryQueue('key-2-2', 'value-2-2');
+	queue.entryQueue('key-3-2', 'value-3-2');
+	queue.print();
+	queue.deQueue();
+	console.log( "--" );
+	queue.print();
+	console.groupEnd();
+
+}
