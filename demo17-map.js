@@ -114,7 +114,7 @@
 
 			keys.sort().forEach(key => console.log( thisMap.get(key) ))
 		}
-		
+
 		// 出队
 		deQueue() {
 			this.arr.shift();
@@ -132,4 +132,46 @@
 	queue.print();
 	console.groupEnd();
 
+}
+
+{
+	// 最优算法
+	console.group('--------------  最优排序 --------------');
+	class Queue {
+		constructor () {
+			this.arr = [];
+		}
+
+		// 入队
+		entryQueue(key, value) {
+			this.arr.push({
+				key,
+				value
+			});
+		}
+
+		// 打印
+		print() {
+
+			let arrCopy = this.arr.slice(0);
+			arrCopy.sort((a, b) => a['key'].localeCompare(b['key']))
+			console.log( arrCopy );
+		}
+
+		// 出队
+		deQueue() {
+			this.arr.shift();
+		}
+	}
+
+	const queue = new Queue();
+	queue.entryQueue('key-1-2', 'value-1-2');
+	queue.entryQueue('key-1-1', 'value-1-1');
+	queue.entryQueue('key-2-2', 'value-2-2');
+	queue.entryQueue('key-3-2', 'value-3-2');
+	queue.print();
+	queue.deQueue();
+	console.log( "--" );
+	queue.print();
+	console.groupEnd();
 }

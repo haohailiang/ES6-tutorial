@@ -20,4 +20,17 @@
 // import './demo25-decorator.js';
 // import './demo26-decorator.js';
 // import './demo27-type-validation.js';
-import './demo28-for-of.js';
+// import './demo28-for-of.js';
+// import './demo-test.js';
+
+import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from './TodoFilters'
+
+const FILTER_TITLES = {
+  [SHOW_ALL]       : 'All',
+  [SHOW_ACTIVE]    : 'Active',
+  [SHOW_COMPLETED] : 'Completed'
+}
+
+Object.keys(FILTER_TITLES).map(filter =>
+  console.log(filter)
+)
